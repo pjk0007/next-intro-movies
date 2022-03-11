@@ -8,21 +8,14 @@ export default function NavBar() {
   return (
     <nav>
       <Link href="/">
-        <a className={router.pathname === "/" ? "active" : ""}>Home</a>
+        <a>Home</a>
       </Link>
       <Link href="/about">
-        <a className={router.pathname === "/about" ? "active" : ""}>About</a>
+        <a>About</a>
       </Link>
-
       <style jsx>{`
         nav {
-          background-color: tomato;
-        }
-        a {
-          text-decoration: none;
-        }
-        .active {
-          color: yellow;
+          color: black;
         }
       `}</style>
     </nav>

@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <NavBar />
-      <h1 className="active">Home</h1>
+      <h1>Home</h1>
       <style jsx>{`
         a {
           color: white;

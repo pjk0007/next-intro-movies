@@ -22,7 +22,7 @@ export default function NavBar() {
           text-decoration: none;
         }
         .active {
-          color: yellow;
+          color: blue;
         }
       `}</style>
     </nav>
