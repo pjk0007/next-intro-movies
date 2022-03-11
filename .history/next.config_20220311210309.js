@@ -1,4 +1,4 @@
-const API_KEY = process.env.API_KEY;
+const API_KEY = "10923b261ba94d897ac6b81148314a3f";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -11,15 +11,16 @@ const nextConfig = {
         permanent: false,
       },
     ];
-  }, // url을 바꿔버린다
+  },
   async rewrites() {
     return [
       {
         source: "/api/movies",
-        destination: `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`,
+        destination:
+          "https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}",
       },
     ];
-  }, // url을 바꾸지만 보이는건 안바뀜
+  },
 };
 
 module.exports = nextConfig;
