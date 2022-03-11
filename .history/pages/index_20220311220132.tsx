@@ -4,7 +4,7 @@ import Seo from "../components/Seo";
 
 export default function Home({ results }: any) {
   const router = useRouter();
-  const onClick = (title: any, id: any) => {
+  const onClick = (id: String, title: String) => {
     router.push(`/movies/${title}/${id}`);
     //router.push(`/movies/${id}`);
   };

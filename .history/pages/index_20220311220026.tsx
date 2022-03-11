@@ -4,7 +4,7 @@ import Seo from "../components/Seo";
 
 export default function Home({ results }: any) {
   const router = useRouter();
-  const onClick = (title: any, id: any) => {
+  const onClick = (id: String, title: String) => {
     router.push(`/movies/${title}/${id}`);
     //router.push(`/movies/${id}`);
   };
@@ -17,7 +17,7 @@ export default function Home({ results }: any) {
             onClick={() => onClick(movie.original_title, movie.id)}
             src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
           />
-          <Link href={`/movies/${movie.original_title}/${movie.id}`}>
+          <Link href={`/movies/${movie.title}/${movie.id}`}>
             <a>
               <h4>{movie.original_title}</h4>
             </a>
