@@ -32,7 +32,6 @@ export default function Home({ results }: any) {
                 title: `${movie.title}`,
               },
             }}
-            as={`movies/${movie.id}`}
           >
             <a>
               <h4>{movie.original_title}</h4>

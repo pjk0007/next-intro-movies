@@ -25,15 +25,7 @@ export default function Home({ results }: any) {
             onClick={() => onClick(movie.id, movie.title)}
             src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
           />
-          <Link
-            href={{
-              pathname: `/movies/${movie.id}`,
-              query: {
-                title: `${movie.title}`,
-              },
-            }}
-            as={`movies/${movie.id}`}
-          >
+          <Link href={`/movies/${movie.id}`}>
             <a>
               <h4>{movie.original_title}</h4>
             </a>

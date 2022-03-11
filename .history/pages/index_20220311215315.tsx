@@ -27,12 +27,11 @@ export default function Home({ results }: any) {
           />
           <Link
             href={{
-              pathname: `/movies/${movie.id}`,
+              pathname: `/movies/${id}`,
               query: {
-                title: `${movie.title}`,
+                title: `${title}`,
               },
             }}
-            as={`movies/${movie.id}`}
           >
             <a>
               <h4>{movie.original_title}</h4>
