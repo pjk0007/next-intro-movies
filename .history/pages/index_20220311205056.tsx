@@ -16,12 +16,11 @@ export default function Home() {
     })();
   }, []);
   return (
-    <div className="container">
+    <div>
       <Seo title="Home" />
       {!movies && <h4>Loading...</h4>}
       {movies?.map((movie: any) => (
-        <div className="movie" key={movie.id}>
-          <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} />
+        <div key={movie.id}>
           <h4>{movie.original_title}</h4>
         </div>
       ))}

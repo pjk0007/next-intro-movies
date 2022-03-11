@@ -16,7 +16,7 @@ export default function Home() {
     })();
   }, []);
   return (
-    <div className="container">
+    <div>
       <Seo title="Home" />
       {!movies && <h4>Loading...</h4>}
       {movies?.map((movie: any) => (
